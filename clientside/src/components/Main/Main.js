@@ -38,7 +38,7 @@ function Main() {
             setwikiData(data.htmlContent);
             setarticleHead(data.heading);
             setisLoading(false);
-            console.log("success",data.htmlContent);
+            
         } catch (error) {
             console.log(error);
         }
