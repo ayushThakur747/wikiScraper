@@ -28,9 +28,8 @@ function ScrapedTable({articleHead,wikiData}) {
                                             wikiData.map((element) => (
                                                 
                                                 <TableRow >
-                                                    <TableCell component="th" scope="row">                                                        {element[0]}
-                                                        </TableCell>
-                                                        <TableCell align="right">{element[1]}</TableCell>
+                                                    <TableCell component="th" scope="row">{element[0]}</TableCell>
+                                                    <TableCell align="right">{element[1]}</TableCell>
                                                 </TableRow>
                                             ))
                                         :(null)
