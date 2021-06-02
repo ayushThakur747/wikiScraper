@@ -9,7 +9,6 @@ import Paper from '@material-ui/core/Paper';
 import { Typography } from '@material-ui/core';
 import useStyles from './styles';
 function ScrapedTable({articleHead,wikiData}) {
-    console.log("scraape",wikiData);
     const classes = useStyles();
     return (
             <div>
