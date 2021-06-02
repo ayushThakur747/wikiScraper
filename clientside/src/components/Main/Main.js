@@ -25,11 +25,11 @@ function Main() {
             return;
         }
         for (let i = 0; i < ideal.length; i++) {
-        if(spiltedlink[i] !== ideal[i]){
-            console.log(spiltedlink[i],ideal[i],",oops,not a wiki article link");
-            setvalidateURL(false);
-            return;
-        }
+            if(spiltedlink[i] !== ideal[i]){
+                console.log(spiltedlink[i],ideal[i],",oops,not a wiki article link");
+                setvalidateURL(false);
+                return;
+            }
         }        
         try {
             setisLoading(true);
