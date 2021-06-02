@@ -21,12 +21,10 @@ function Main() {
         const spiltedlink = wikiLink.split('/');
         if(spiltedlink.length>ideal.length+1){
             setvalidateURL(false);
-            console.log("oops,not a wiki article link");
             return;
         }
         for (let i = 0; i < ideal.length; i++) {
             if(spiltedlink[i] !== ideal[i]){
-                console.log(spiltedlink[i],ideal[i],",oops,not a wiki article link");
                 setvalidateURL(false);
                 return;
             }
