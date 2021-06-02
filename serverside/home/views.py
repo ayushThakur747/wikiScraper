@@ -7,8 +7,7 @@ from rest_framework.decorators import api_view
 #scrap
 def get_html_content(wikiURL):
     import requests
-    session = requests.Session()
-    htmlcontent = session.get(wikiURL).text
+    htmlcontent = requests.get(wikiURL).text
 
     return htmlcontent
 
